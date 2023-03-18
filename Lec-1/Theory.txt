@@ -1,0 +1,72 @@
+Answers of theory questions : 
+
+🔺 What is Emmet ?
+➡️ Emmet is a plugin for browser which mainly helps in improving the speed while writing HTML and CSS syntax.
+    - e.g. HTML : ul.navbar> li*4{Item $} will give  <ul className="navbar" >
+                                                    <li> Item 1 </li>
+                                                    <li> Item 2 </li>
+                                                    <li> Item 3 </li>
+                                                    <li> Item 4 </li>
+                                                 </ul>
+    - e.g. CSS : m10 will give margin : 10rem ; 
+    - As per my personal usage it drastically improves the speed while writing the html and css syntax.
+    + For more reference : https://docs.emmet.io/ 
+
+🔺 Difference between a Library and Framework?
+➡️ ~ Library is like home whith less rules and restrictions and Framework is like a college where the are some rules and restrictions.
+    ~ In Library when we have a power to when ever call to a code and in framework framework is actually calling the code for us. 
+    ~ e.g: JQuery is Library and django is a framework
+    * So bat ki ek bat aagar jada freedom hey or restrictions kam hey to wo most likely library hey vice versa kam freedom and jada rules to wo
+    framework ho sakta hey. 
+    + For more reference : https://www.interviewbit.com/blog/framework-vs-library/
+
+🔺 What is CDN ? Why do we use it ?
+➡️ ~ CDN stands for content delivery network.
+    ~ Main benefit is CDN makes website faster.
+    ~ We use CDN for the purpose of the improving the performance of the webpage.
+
+🔺 Why React is known as React ?
+➡️  React is known as React because it reacts on each state change. As state changes, React compare the virtual DOM change with the real DOM then it updates the real DOM.
+! While finding answer for this question I realize the importance of the home work questions ;) 
+
+🔺 What is crossorigin in script tag?
+➡️ it is one of the safety measure
+
+🔺 What is difference between React and ReactDOM
+➡️ ~ The react package holds the react source for the components, state, props and all the code that is react, react-DOM is a complementary library tha glues the react and the browser DOM. 
+    ~ Whenever we use component, classes, elements, etc. We’re using React and whenever we use methods like render() or findDOMNode() we’re using React-DOM.
+    + For more reference : https://medium.com/programming-sage/react-vs-react-dom-a0ed3aea9745
+
+🔺 What is difference between react.development.js and react.production.js files via CDN?
+➡️ ^^ react.development.js
+    ~ "react.development.js" is an uncompressed, unminified version of the React JavaScript file. 
+    ~ It includes additional warnings and error messages that can be helpful for debugging during development. 
+    ~ This file is typically used during the development stage of a project because it allows for easier debugging and troubleshooting of code.
+
+    ^^ react.production.js
+    ~ "react.production.js"  is a compressed , minified version of the react JavaScript file.
+    ~ It is stripped / cleaned of all unnecessary code, making the file smaller and more efficient.
+    ~ It does not include any of the warnings and error messages found in the development version of the file.
+    ~ This file is typically used in a production environment because it reduces the overall file size of the application, making it load faster for end-users.
+
+    ~ When you use the React library via a CDN, you can choose which version of the file to use based on your needs. If you are developing your application, you may want to use the development version to make debugging easier. If you are deploying your application to a production environment, you will want to use the production version to ensure optimal performance.
+
+    ! I got the best answer of this question from the chatGPT :) 
+
+🔺 What is async and defer? 
+➡️ ~ async and differ are boolean attributes which are used along with script tags to load the external scripts in       webpage efficiently.
+    ~ Without async and defer 
+        <script src="...."  /> 
+        - as the html parsing is done it stops when the script tag is encountered then the script is get loaded from the network and after loading the script the execution of script is done then the HTML parsing resumes. 
+
+    ~ using async 
+        <script async src="...."  />
+        - as the html parsing is happening the script simultaneously get loaded from the network and when the script tag encounters the execution of script is done then the HTML parsing resumes. 
+        ~ does not guaranty the order /sequence of the script. 
+
+    ~ using defer
+         <script defer src="...."  />
+         - In it the html parsing is done without any break the script gets loaded from the network while parsing the html doc as the parsing of the HTML gets completed then the script starts to executing.
+        ~  Guaranty the order /sequence of the script. 
+        ~ always try to use this. 
+
