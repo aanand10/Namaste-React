@@ -1,0 +1,21 @@
+things required for making a production ready app 
+
+- HMR - Hot module replacement
+- File watcher algo - in parcel it is made in cpp
+- Building
+- Minify
+- Cleaning our code
+- Dev and Production Build
+- Super fast build algorithm
+- image optimization 
+- caching while development
+- compression
+- compatible with older versions of browser 
+- HTTPS while development 
+- port number can be changes while more number of servers running on same time 
+- consistent hashing algo
+- zero configuration 
+these and many more things are offered by Parcel package manager to us.
+
+
+++  Transitive dependencies : as one package is depends on another package and that is on another this dependency cycle is can be said as Transitive dependencies. 
