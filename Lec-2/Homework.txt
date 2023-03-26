@@ -1,0 +1,52 @@
+Answers of theory questions of Lecture 2: 
+
+🔺 What is `NPM`?
+➡️ It is a package manager. For a application there is need to manage lots of packages there this NPM plays it's role in managing the packages for aur application. Like taking example of react app it requires lots of packages for a production ready app so NPM does that job.  
+
+🔺 What is `Parcel/Webpack`? Why do we need it?
+➡️ Parcel/Webpack are the bundlers which gives us various features like minifying the app , optimizing the code , cleaning the console, caching, cross browser support, optimizing the files , managing the port while development that let us to create a production ready app that s why we need them.
+
+🔺 What is `.parcel-cache` ?
+➡️ .parcel-cache is the folder containing the cached files which are generated after the build. These files help in creating subsequent builds faster and quicker. Like if first build takes 2 sec then due to these cached files subsequent one will take only some milliseconds (depending on your machine). These cache files saves lots of time. 
+
+🔺 What is `npx` ?
+➡️ ~ The npx stands for Node Package Execute and it comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed.
+    ~ it is used execute packages.
+    ~ we can execute any package without installing it.
+    ~ packages used by npx are not installed globally.
+ 
+🔺 What is difference between `dependencies` vs `devDependencies` ?
+➡️ dependencies are those packages on with our application is going to depend while working/ in production where devDependencies are those on which application is depend while its developement process , they are needed for local development and testing.
+
+🔺 What is Tree Shaking?
+➡️ Tree shaking means removing the dead code. In modern JavaScript application , we use module bundlers ( e.g.: webpack or parcel and many more ) to automatically remove dead code when building multiple JavaScript files into single file. This is important for preparing code that is production ready , for example clean structure and minimal file size.
+
+🔺 What is Hot Module Replacement?
+➡️ 
+
+🔺 List down your favorite 5 superpowers of Parcel and describe any 3 of them in your
+own words.
+➡️
+
+🔺 What is `.gitignore`? What should we add and not add into it? 
+➡️ ~ .gitignore is the file where we add / mention the files which need to be ignored while uploading / pushing / committing the files on github.
+    ~ 
+
+🔺 What is the difference between `package.json` and `package-lock.json` 
+➡️
+
+🔺 Why should I not modify `package-lock.json`? 
+➡️
+
+🔺 What is `node_modules` ? Is it a good idea to push that on git? 
+➡️
+
+🔺 What is the `dist` folder? 
+➡️
+
+🔺 What is `browserlists` 
+➡️
+
+Read about dif bundlers: vite, webpack, parcel
+● Read about: ^ - caret and ~ - tilda
+● Read about Script types in html (MDN Docs)
