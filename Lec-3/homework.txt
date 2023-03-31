@@ -1,4 +1,5 @@
 What is JSX?
+jsx can be said as it is combo of HTML and js 
 Superpowers of JSX
 Role of type attribute in script tag? 
 What options can I use there? {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
