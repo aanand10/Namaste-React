@@ -5,6 +5,7 @@ const heading = React.createElement(
   {
     id: "title",
     className: "mainClass",
+    key: "h1",
   },
   "Heading 1 from the parcel"
 );
@@ -13,9 +14,12 @@ const heading2 = React.createElement(
   {
     id: "title2",
     className: "mainClass1",
+    key: "h2",
   },
   "Heading 2 to check the server.."
 );
+console.log(heading);
+//React.createElement ==> object ==> then converted in html and puts in DOM
 
 const container = React.createElement(
   "div",

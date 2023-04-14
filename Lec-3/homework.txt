@@ -11,3 +11,9 @@ Answers of theory questions of Lecture 3:
 
 🔺 What options can I use there? {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
 ➡️ 
+
+
+npm init  
+read about html vs jsx
+usage of jsx
+react reconsilation 
