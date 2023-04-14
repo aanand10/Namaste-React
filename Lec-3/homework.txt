@@ -1,16 +1,39 @@
 Answers of theory questions of Lecture 3: 
 
 🔺What is JSX?
-➡️ jsx can be said as it is combo of HTML and js 
+➡️ - JSX is created by the react developers to make developer experience good while working with react applications
+    - JSX is the HTML like syntax.
+    - JSX is read by the babel and then it gets converted into the React.createElement means behind the scenes of the - - JSX uses React.createElement to create the elements.
+    JSX => React.createElement => object => HTML (DOM)
+    ! Note : JSX is not the HTML in JS
 
 🔺Superpowers of JSX
-➡️ 
+➡️ - HTML type of syntax
+    - More readable 
+    - Expressions in JSX 
+    - props (properties ) to the React elements
+    - Conditionally Rendering Components
+    - Superpowers of js can be used 
+    - Dynamic content rendering
+    
+    🔗 https://tkssharma.gitbook.io/react-training/day-01/all-about-jsx
+
 
 🔺Role of type attribute in script tag? 
-➡️ 
+➡️ This attribute indicates the type of script represented. The value of this attribute will be one of the following: Attribute is not set (default), an empty string, or a JavaScript MIME type
+
+🔗 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
 
 🔺 What options can I use there? {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
-➡️ 
+➡️ In JSX, there are a few different ways to render a component:
+
+    - {TitleComponent}: This is a simple way to render a component without passing any props. However, this syntax can only be used for components that do not have any children.
+
+    - {<TitleComponent/>}: This is the self-closing tag syntax for rendering a component without passing any props. This syntax can be used for components that do not have any children.
+
+    - {<TitleComponent></TitleComponent>}: This is the opening and closing tag syntax for rendering a component without passing any props. This syntax can be used for components that have children.
+
+    - It is important to note that all three of these options will render the same component. The difference is in how the component is written and how it is rendered. If you are not passing any props or children to the component, any of these options will work. However, if you need to pass props or have children, you will need to use the opening and closing tag syntax.
 
 
 npm init  
