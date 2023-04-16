@@ -1,0 +1,87 @@
+Answers of theory questions of Lecture 4 : Talk is cheap, show me the code
+
+🔺Is JSX mandatory for React?
+➡️ no JSX is not mandatory in React
+
+🔺Is ES6 mandatory for React?
+➡️ No ES6 is not mandatory for React
+
+🔺How can I write comments in JSX?
+➡️ As in jsx we can write js so in we commit like // or by for multiple line we comment like /**/ so for commenting in JSX just use it like {// comment } or {/*
+multi 
+line 
+comment 
+*/}
+
+🔺What is <React.Fragment></React.Fragment> and <></> ?
+➡️ - <React.Fragment></React.Fragment> and <></> these represent React Fragment which is solution for the problem that JSX xan have only one parent element. 
+    - Due to that we have to use div for nesting various elements in one pack or wrapping various elements but that is creating the problem of increased in number of unnecessary div's
+    - So getting rid from that React Fragment is used it is a component exported by the react 
+    - It is like a empty tag 
+    - Way of grouping items
+    - we can we Fragment inside another fragment also <> <> </></> this can be done
+
+
+🔺What is Virtual DOM?
+➡️ - Virtual dom is the concept is a concept used in modern web development frameworks like React, Vue.js, and Angular. 
+    - Virtual dom is the representation of the real DOM 
+    - as virtual dom is used to compare and as reconciliation performed using diff algo
+    - Virtual dom is necessary for the reconciliation 
+    - The virtual DOM acts as a virtual copy of the actual DOM, allowing the framework to keep track of changes made to the webpage without needing to redraw the entire webpage every time a change is made.
+
+
+🔺What is Reconciliation in React?
+➡️ - Reconciliation in react is the way of updating only those elements which have been changed or can say rendering only those elements is DOM which are changed 
+    - Reconciliation is the process of updating the actual Document Object Model (DOM) of a web page efficiently based on changes made to its virtual DOM representation.
+    - In modern web development frameworks like React, Vue.js, and Angular, reconciliation is a core part of the framework's architecture and is responsible for updating the actual DOM with changes made to the virtual DOM.
+    - The reconciliation algorithm of the framework aims to minimize the number of DOM manipulations and ensure that the updates are as efficient as possible.
+    - Reconciliation is a key concept in modern web development and enables developers to create complex and dynamic web applications with high performance and fast rendering times.
+
+🔺Why we need keys in React? When do we need keys in React?
+➡️ - we need keys in rect to perform reconciliation more effectively and effeciently 
+    - As the keys are unique so as react detects them by them react can understand that where are the changes are being made or can precisely it can be detected that what to change.
+    - lets take example we have four div's without id if we add 5th div in that container react will rerender the whole five div's but instead of that if our every div have some unique id that react by using Reconciliation detects which is new one and only that element/div will we rerendered.
+    
+    - we need keys for avoiding the whole items to rerender which increases the load time and can slow down the application using keys reconciliation type of algorithms works.
+    - Using index as a key is bad practice try to use unique ids 
+
+    
+
+🔺Can we use index as keys in React?
+➡️ Yes we can but it is not recommended to do so. 
+
+🔺What is props in React? Ways to use 
+➡️ - Props is the shorthand of properties
+    - Props can are simply the parameters of the function 
+    - we can pass anything as a prop in react 
+    - React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props.
+    - 1) by using props word or can say by using props.(prop)
+    const Avatar = (props) =>{
+        return (
+            <img src={props.link} alt={props.name}>
+            <h1> {props.name} </h1>
+            <p> {props.bio} </p>
+        )
+    }
+
+    2) By destructuring the props and then passing them
+    const Avatar = ({name , link , bio}) =>{
+        return (
+            <img src={link} alt={name}>
+            <h1> {name} </h1>
+            <p> {bio} </p>
+        )
+    }
+
+    can be used like this or passed like this : 
+    <Avatar name="Anand" link="dub.sh/anand/profile.jpg" bio="NaN" />
+
+    3) By using spread operator this is done when calling / rendering the specific element. using spread operator all the parameters are being get available 
+    <Avatar {...profile} /> 
+
+🔺What is a Config Driven UI ?
+➡️ "config-driven UI" is a user interface that is built and configured using a declarative configuration file or data structure, rather than being hardcoded. 
+    - The configuration file or data structure typically contains information about the structure of the UI, such as the layout of the elements, the properties and behaviors of each element, and any data sources or APIs that the UI interacts with.
+
+🔺What is React Fiber?
+➡️ 
