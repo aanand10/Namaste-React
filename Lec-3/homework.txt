@@ -35,8 +35,17 @@ Answers of theory questions of Lecture 3:
 
     - It is important to note that all three of these options will render the same component. The difference is in how the component is written and how it is rendered. If you are not passing any props or children to the component, any of these options will work. However, if you need to pass props or have children, you will need to use the opening and closing tag syntax.
 
+🔺 react Reconciliation 
+➡️ - Updating react dom by comparing with the old dom when changes occurs.
+    - It can be effectively done by using props , key ,etc.  more tg=his saves time and computations..
+    - Help's while rerendering the the React elements effectively instead ~of rerendering the whole structure.
+ 
+🔺Component Composition 
+➡️ - used to avoid props drilling in various layers of rhe application 
+    - can use components in another component.
+    - we can create more specific props that can accept components as well 
 
 npm init  
 read about html vs jsx
 usage of jsx
-react reconsilation 
+react Reconciliation 

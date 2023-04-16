@@ -1,0 +1,76 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* root style  */
+
+/* style  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header  */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 0.2rem 1rem;
+}
+.logoBox a {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 4rem;
+}
+.nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+/* body and cards part  */
+
+.cardContainer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.card {
+  width: 18rem;
+  border: 1px solid rgb(214, 211, 211);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.card img {
+  width: 16rem;
+  height: 10rem;
+}
+
+.card h2 {
+  font-size: 17px;
+  font-weight: 500;
+  word-break: break-word;
+}
+.card h3 {
+  color: #686b78;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.card p {
+  margin-top: 18px;
+  font-size: 12px;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #535665;
+}
