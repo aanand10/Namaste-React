@@ -23,7 +23,8 @@ comment
 
 
 🔺What is Virtual DOM?
-➡️ - Virtual dom is the concept is a concept used in modern web development frameworks like React, Vue.js, and Angular. 
+➡️ - The virtual DOM (VDOM) is a programming concept where an ideal, or  “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.
+    - Virtual dom is the concept is a concept used in modern web development frameworks like React, Vue.js, and Angular. 
     - Virtual dom is the representation of the real DOM 
     - as virtual dom is used to compare and as reconciliation performed using diff algo
     - Virtual dom is necessary for the reconciliation 
@@ -84,4 +85,5 @@ comment
     - The configuration file or data structure typically contains information about the structure of the UI, such as the layout of the elements, the properties and behaviors of each element, and any data sources or APIs that the UI interacts with.
 
 🔺What is React Fiber?
-➡️ 
+➡️ Fiber is the new reconciliation engine in React 16. Its main goal is to enable incremental rendering of the virtual DOM. 
+    - incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
