@@ -36,10 +36,11 @@
 /* body and cards part  */
 
 .cardContainer {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: space-evenly;
 }
 .card {
   width: 18rem;
@@ -55,7 +56,13 @@
   width: 16rem;
   height: 10rem;
 }
-
+.card:hover img {
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+}
 .card h2 {
   font-size: 17px;
   font-weight: 500;
@@ -73,4 +80,21 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #535665;
+}
+
+.search-container {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin: 0 auto;
+  width: max-content;
+  padding: 0.5rem;
+}
+.search-container input:focus-visible {
+  outline: none !important;
 }
