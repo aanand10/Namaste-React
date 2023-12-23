@@ -1,4 +1,5 @@
 import { IMG_CDN_URL, restrauntList } from "../config";
+import { Link } from "react-router-dom";
 // config driven ui : as it is driven by api and backend
 
 // instead of writing props we can destructure it which is called as destructuring so there is no need of using props word again and again
@@ -9,6 +10,7 @@ const RestrauntCard = ({
   avgRating,
   costForTwoString,
   sla,
+  id,
 }) => {
   //   we can destructure the given data also
   //   const {} = restraunt.data;
@@ -16,34 +18,28 @@ const RestrauntCard = ({
   //   const { deliveryTime } = restraunt.data.sla;
 
   return (
-    <div className="card">
-      <img
-        style={{ borderRadius: "0.4rem" }}
-        src={`${IMG_CDN_URL}${cloudinaryImageId}`}
-        alt="Card Image"
-      />
-      <h2>{name}</h2>
-      <h3>{cuisines.join(", ")}</h3>
-      <p>
-        {avgRating} stars | {sla.deliveryTime} min | {costForTwoString}
-      </p>
-      {
-        // we can not do this bec it only accept js expression not the statements
-        // a = 10 ;
-        // console.log(a);
-        ((a = 10), console.log(a))
-      }
-    </div>
+    <Link to={"/Restaurant/" + id}>
+      <div className="card" key={id}>
+        <img
+          style={{ borderRadius: "0.4rem" }}
+          src={`${IMG_CDN_URL}${cloudinaryImageId}`}
+          alt="Card Image"
+        />
+
+        <h2>{name}</h2>
+
+        <h3>{cuisines.join(", ")}</h3>
+        <p>
+          {avgRating} stars | {sla.deliveryTime} min | {costForTwoString}
+        </p>
+      </div>
+    </Link>
   );
 };
 
 const RestrauntCards = () => {
   return (
     <>
-      {/* <h4>rendering using props </h4> */}
-
-      {/* <RestranuntCard restraunt={restrauntList[0].data}></RestranuntCard> */}
-      {/* <RestranuntCard {...restrauntList[0].data}></RestranuntCard> */}
       {restrauntList.map((restaurant) => {
         return (
           <RestranuntCard

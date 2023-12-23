@@ -1,5 +1,10 @@
 /* font  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* In your CSS file */
+/* @import "~leaflet/dist/leaflet.css"; */
+/* In your CSS file */
+@import "./node_modules/leaflet/dist/leaflet.css";
+
 /* root style  */
 
 /* style  */
@@ -41,6 +46,10 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: space-evenly;
+  height: 75vh;
+  margin: 1rem 0;
+  /* background: red; */
+  overflow-y: scroll;
 }
 .card {
   width: 18rem;
@@ -94,7 +103,14 @@
   margin: 0 auto;
   width: max-content;
   padding: 0.5rem;
+  width: 40%;
 }
 .search-container input:focus-visible {
   outline: none !important;
+}
+
+/* shimmer  */
+.loadingImg {
+  height: auto !important;
+  width: auto !important;
 }
